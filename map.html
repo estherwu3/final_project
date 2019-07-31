@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143256738-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143256738-2');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>客庄分布介紹</title>
+
+  <!-- FAVIOCN -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <!-- 網站META -->
+  <!-- 說明最好要設，讓Google搜尋能抓到網站說明 -->
+  <meta name="keywords" content="客家庄,客家,景點">
+  <meta name="description" content="客家庄台灣分布圖">
+  <meta name="author" content="ESTHER WU">
+
+  <!-- FACEBOOK META -->
+  <meta property="og:title" content="客家庄">
+  <meta property="og:image" content="./img/huabu.jpg">
+  <meta property="og:description" content="客家庄台灣分布圖">
+  <meta property="og:site_name" content="客家景點">
+
+  <!-- Twitter META -->
+  <meta name="twitter:card" content="./img/huabu.jpg">
+  <meta name="twitter:site" content="客家 || 景點">
+  <meta name="twitter:title" content="客家庄">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="./img/huabu.jpg">
+
+  <!-- Apple META -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/coffee.css">
+  <link rel="stylesheet" href="./css/animate.css">
+  <link rel="stylesheet" href="./css/dataTables.bootstrap4.min.css">
+
+
+
+  <!-- PWA -->
+  <link rel="manifest" href="./js/manifest.json">
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <!-- <nav class="navbar navbar-expand-lg navbar fixed-top shadow-sm"> -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./img/Taiwan_Hakka.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        客家庄
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">
+                    <i class="fas fa-home"></i> 首頁
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./land.php">
+                    <i class="fas fa-monument"></i> 景點介紹
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./shop.html">
+                    <i class="fas fa-info-circle"></i> 旅遊諮詢
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./chart.html">
+                    <i class="fas fa-chart-bar"></i> 景點分布圖表
+                </a>
+            </li>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="./map.html">
+                    <i class="fas fa-atlas"></i> 客庄台灣地圖分布
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+  </nav>
+  <div id="page">
+    <div class="container-fluid" id="loading">
+      <div class="row h-100">
+        <div class="col-12 text-center align-self-center">
+          <img src="./img/earth.svg" alt="" width="300" height="300">
+          <p class="text-white">loading...</p>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="content" style="margin-top: 70px; margin-bottom:64px; ">
+      <div class="row">
+        <div class="col-12 text-center text-white rubberBand wow my-2">
+          <h1>客庄分布介紹</h1>
+        </div>
+        <hr class="hr-white">
+        <div class="col-12" id="sv">
+          <svg version="1.1" id="taiwan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="910px" height="930px" viewBox="0 0 595.28 841.89"
+            enable-background="new 0 0 595.28 841.89" xml:space="preserve">
+            <path fill="#2CB497" d="M328.657,230.755c0.956-2.283,2.525-4.218,4.473-5.689h-9.263
+                 C325.943,226.479,327.589,228.457,328.657,230.755z" />
+            <path fill="#2CB497" id="1"
+              d="M439.963,308.403h0.076c0.265-0.018,0.514-0.079,0.779-0.079L439.963,308.403z" />
+            <path fill="#1E4B9E" id="2" d="M191.996,235.921v0.416c0.01-0.143,0.038-0.277,0.054-0.416H191.996z" />
+
+            <a href="https://travel.tycg.gov.tw/zh-tw/travel/attraction/333" target="_blank">
+              <path fill="#53B77A" title="桃園" id="tao" d="M304.658,98.84v2.068c0,4.67-1.381,8.99-3.653,12.7c7.688,1.967,13.423,8.899,13.423,17.201v0.568
+                 c0,8.466,6.886,15.352,15.346,15.352c10.131,0,18.121,7.988,18.121,17.81v0.572c0,8.464,6.886,15.35,15.35,15.35
+                 c10.126,0,18.116,7.988,18.116,17.807v5.724c1.559,1.692,3.771,2.772,6.244,2.772c4.693,0,8.504-3.819,8.504-8.474l0.181-6.176
+                 c0-3.686-2.999-6.683-6.677-6.683c-3.434,0-6.224-2.791-6.224-6.222V151.7l-0.061-1.887c0-4.794-3.898-8.695-8.692-8.695h-6.666
+                 c-3.437,0-6.231-2.795-6.231-6.232v-20.21c0-3.435,2.795-6.229,6.231-6.229l1.229-0.062v-0.07c5.159-0.612,9.17-5.011,9.17-10.332
+                 c0-5.737-4.665-10.401-10.399-10.401c-3.437,0-6.231-2.798-6.231-6.237v-6.876l-32.672-0.036
+                 C315.596,74.432,304.658,85.355,304.658,98.84z" /></a>
+
+            <path fill="#1E4B9E" id="4" d="M348.581,222.231h-7.151c-3.128,0-5.982,1.082-8.3,2.835h21.719
+                 C353.307,223.339,351.074,222.231,348.581,222.231z" />
+            <path fill="#1E4B9E" id="5"
+              d="M191.964,236.604l-0.101,1.797h0.129l0.004-2.064C191.986,236.427,191.968,236.513,191.964,236.604z" />
+
+            <a href="https://thcdc.hakka.gov.tw/wSite/mp?mp=2" target="_blank">
+              <path fill="#A75DA2" title="苗栗" id="miao" d="M323.867,225.066h-10.451c-3.558,0-6.457-2.897-6.457-6.458l0.386-8.671c0-4.806-3.951-8.761-8.813-8.761
+                 c-6.4,0-11.455-5.057-11.455-11.272v-0.341c0-4.858-3.955-8.813-8.81-8.813c-3.3,0-6.226-1.361-8.306-3.518
+                 c-4.483,15.264-18.568,26.416-35.273,26.416h-1.427c-18.789,0-34.251,14.1-36.484,32.274h26.101c5.115,0,9.279,4.16,9.279,9.273
+                 v0.687c0,7.773,6.32,14.096,14.091,14.096h58.519c12.58,0,22.818-10.233,22.818-22.813v-1.082c0-1.889,0.386-3.686,1.072-5.326
+                 C327.589,228.457,325.943,226.479,323.867,225.066z" /></a>
+
+            <a href="https://travel.taichung.gov.tw/zh-tw/Attractions/Intro/100/%E6%9D%B1%E5%8B%A2%E5%AE%A2%E5%AE%B6%E6%96%87%E5%8C%96%E5%9C%92%E5%8D%80"
+              target="_blank">
+              <path fill="#1E4B9E" title="台中" id="taichun" d="M364.111,241.506v-0.215h-1.229c-3.313,0-6.011-2.694-6.011-5.96l0.173-4.633
+                 c0-2.17-0.844-4.134-2.196-5.631H333.13c-1.947,1.471-3.517,3.407-4.473,5.689c-0.687,1.64-1.072,3.437-1.072,5.326v1.082
+                 c0,12.58-10.238,22.813-22.818,22.813h-58.519c-7.771,0-14.091-6.322-14.091-14.096v-0.687c0-5.113-4.164-9.273-9.279-9.273h-26.101
+                 c-0.097,0.817-0.155,1.644-0.203,2.479c-0.034,0.674-0.098,1.345-0.098,2.034v55.126h8.583c5.649,0,10.241,4.591,10.241,10.235
+                 v24.936c0,7.593,6.175,13.772,13.672,13.771h0.006l0.313,0.022c7.637,0,13.847-6.209,13.847-13.844
+                 c0-6.284,5.105-11.394,11.385-11.394h16.565c7.637,0,13.846-6.211,13.846-13.844c0-6.28,5.107-11.387,11.383-11.387h35.932
+                 c7.625,0,13.84-6.211,13.84-13.85c0-6.278,5.104-11.385,11.384-11.385l1.229-0.074v-0.054c6.657-0.588,11.978-5.906,12.563-12.562
+                 l0.084-6.248C371.347,245.631,368.199,242.104,364.111,241.506z" /></a>
+
+            <a href=https://www.hchcc.gov.tw/newtile/ target="_blank">
+              <path fill="#6A2365" id="chu" title="新竹"
+                d="M363.244,180.461c-8.464,0-15.35-6.886-15.35-15.35v-0.572c0-9.821-7.99-17.81-18.121-17.81
+                 c-8.46,0-15.346-6.886-15.346-15.352v-0.568c0-8.302-5.734-15.234-13.423-17.201c-0.462,0.747-0.968,1.447-1.502,2.14
+                 c-4.465,5.782-11.387,9.568-19.253,9.568h-1.955c-3.76,0-6.826,3.05-6.826,6.822v34.725c0,2.518-0.253,4.973-0.739,7.348
+                 c-0.207,1.026-0.476,2.027-0.769,3.019c2.08,2.156,5.005,3.518,8.306,3.518c4.854,0,8.81,3.955,8.81,8.813v0.341
+                 c0,6.215,5.055,11.272,11.455,11.272c4.862,0,8.813,3.955,8.813,8.761l-0.386,8.671c0,3.562,2.899,6.458,6.457,6.458h10.451h9.263
+                 c2.317-1.753,5.172-2.835,8.3-2.835h7.151c2.493,0,4.726,1.108,6.268,2.835h3.16c3.557,0,6.452-2.897,6.452-6.458
+                 c0-2.205,1.799-4,4.003-4h7.022c3.236,0,5.874-2.634,5.874-5.87v-4.746v-5.724C381.36,188.449,373.37,180.461,363.244,180.461z" />
+            </a>
+
+            <path fill="none" id="9" d="M439.963,308.403h0.076c0.265-0.018,0.514-0.079,0.779-0.079L439.963,308.403z" />
+            <path fill="#2CB497" id="10" d="M486.446,94.225h-0.401c-2.613,0-4.738-2.122-4.738-4.742l-0.16-4.742c0-11.337-9.179-20.524-20.521-20.524
+                 h-22.36c-7.822,0-14.154-6.336-14.154-14.156v-1.038c0-8.799-6.878-16.35-15.679-16.506c-8.962-0.173-16.278,7.05-16.278,15.98
+                 v1.568c0,13.471-10.933,24.408-24.42,24.408l-5.995-0.006v6.876c0,3.439,2.795,6.237,6.231,6.237
+                 c5.734,0,10.399,4.664,10.399,10.401c0,5.32-4.011,9.719-9.17,10.332v0.07l-1.229,0.062c-3.437,0-6.231,2.794-6.231,6.229v20.21
+                 c0,3.437,2.795,6.232,6.231,6.232h6.666c4.794,0,8.692,3.9,8.692,8.695l0.061,1.887v27.51c0,3.431,2.79,6.222,6.224,6.222
+                 c3.678,0,6.677,2.998,6.677,6.683l-0.181,6.176c0,4.655-3.811,8.474-8.504,8.474c-2.474,0-4.686-1.08-6.244-2.772v4.746
+                 c0,3.236-2.638,5.87-5.874,5.87h-7.022c-2.204,0-4.003,1.795-4.003,4c0,3.562-2.896,6.458-6.452,6.458h-3.16
+                 c1.353,1.498,2.196,3.461,2.196,5.631l-0.173,4.633c0,3.266,2.698,5.96,6.011,5.96h1.229v0.215c4.088,0.598,7.235,4.125,7.235,8.376
+                 l-0.084,6.248c-0.586,6.655-5.906,11.973-12.563,12.562v0.054l-1.229,0.074c-6.28,0-11.384,5.107-11.384,11.385
+                 c0,7.639-6.215,13.85-13.84,13.85h-35.932c-6.276,0-11.383,5.107-11.383,11.387c0,7.633-6.209,13.844-13.846,13.844h-16.565
+                 c-6.28,0-11.385,5.109-11.385,11.394c0,7.635-6.209,13.844-13.847,13.844l-0.313-0.022h-0.006
+                 c-7.497,0.002-13.672-6.178-13.672-13.771v-24.936c0-5.644-4.591-10.235-10.241-10.235h-8.583v1.927
+                 c0,12.995-10.482,23.582-23.489,23.696c-13.007,0.13-23.487,10.696-23.487,23.7v29.949c0,4.102-3.333,7.438-7.436,7.438h-0.865
+                 c-14.591,0-26.422,11.817-26.422,26.418v97.525c0,4.995-4.047,9.034-9.044,9.034h-1.325c-5,0-9.048,4.043-9.048,9.055v0.795v5.781
+                 c0,10.81,8.761,19.574,19.578,19.574h1.474c4.999,0,9.038,4.044,9.038,9.055v65.849c0,13.708,11.116,24.794,24.8,24.794h7.484
+                 c4.999,0,9.183,4.056,9.038,9.051L182.42,558.62c0,0,14.756-18.859,19.672-9.837c4.918,9.021,4.918,13.113,4.918,18.036
+                 c0,4.919-14.96,102.464-14.96,102.464s-3.82,5.874-14.549,6.561c-6.191,0.397-9.438-0.835-10.73-4.448v5.135
+                 c0,14.885,12.084,26.962,26.964,26.962h14.083c14.88,0,26.966,12.074,26.966,26.959v51.37c0,15.109,12.356,27.938,27.474,27.66
+                 c14.652-0.284,26.444-12.25,26.444-26.966V664.778c0-14.877,12.077-26.95,26.958-26.95h15.856c14.876,0,26.958-12.086,26.958-26.966
+                 v-58.405c0-7.665,6.203-13.873,13.868-13.873h3.421c7.657,0,13.868-6.207,13.868-13.872v-72.197c0-9.981,8.103-18.093,18.093-18.093
+                 h4.453c9.985,0,18.08-8.095,18.08-18.08v-57.737c0,7.376-129.253,252.478-129.253,252.478s-7.42,14.756-17.095,7.376
+                 c-9.679-7.376-6.402-13.933-6.402-13.933l127.061-260.002c0,0,12.014-6.704,18.855,0c6.834,6.701,6.834,6.701,6.834,14.081v-39.726
+                 c0-5.557,4.32-10.07,9.781-10.476h-0.076l0.855-0.079c-0.266,0-0.515,0.061-0.779,0.079l3.385-0.042
+                 c5.822,0,10.552-4.726,10.552-10.554v-64.705c0-9.042,7.336-16.376,16.382-16.376h0.306c5.986,0,10.837-4.854,10.837-10.841
+                 c0-5.987-4.851-10.839-10.837-10.839h-0.306c-2.622,0-4.746-2.122-4.746-4.74l-0.084-48.355c0-11.337,9.183-20.526,20.518-20.526
+                 h0.401c7.524,0,13.604-6.091,13.604-13.597C500.05,100.306,493.951,94.225,486.446,94.225z" />
+
+            <a href="https://tour.taitung.gov.tw/zh-tw/attraction/details/493" target="_blank">
+              <path fill="#6DB931" id="huadon" title="花東"
+                d="M423.424,344.524c-6.842-6.704-18.855,0-18.855,0L277.508,604.526c0,0-3.276,6.557,6.402,13.933
+                 c9.674,7.38,17.095-7.376,17.095-7.376s129.253-245.102,129.253-252.478C430.258,351.225,430.258,351.225,423.424,344.524z" /></a>
+
+            <path fill="#891385" id="12" d="M166.771,659.201c-0.877,5.657-0.945,9.548,0,12.194v-1.639
+                 C166.771,669.757,166.712,661.181,166.771,659.201z" />
+
+            <a href="https://chakcg.kcg.gov.tw/Content_List.aspx?n=0D459380A8E989AA" target="_blank">
+              <path fill="#891385" id="kao" title="高雄" d="M177.501,675.844c10.729-0.687,14.549-6.561,14.549-6.561s14.96-97.545,14.96-102.464
+                 c0-4.923,0-9.015-4.918-18.036c-4.917-9.022-19.672,9.837-19.672,9.837l-15.649,100.581c-0.058,1.979,0,10.556,0,10.556v1.639
+                 C168.063,675.009,171.31,676.241,177.501,675.844z" /></a>
+
+          </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid  mt-4" id="footer">
+    <div class="row justify-content-center">
+      <div class="col-12 text-white text-center">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="https://www.facebook.com/www.hakka.gov.tw/"><i
+                class="fab fa-facebook-f"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white"
+              href=" https://www.hakka.gov.tw/Content/Content?NodeID=447&PageID=20822&LanguageType=CH"><i
+                class="fab fa-twitter"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href=" https://instagram.com/dongshi.hakka?igshid=vg2i0gpdr4us"><i
+                class="fab fa-instagram"></i></a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white"
+              href=" https://www.tripadvisor.com.tw/Attraction_Review-g13806929-d7064174-Reviews-Taiwan_Hakka_Museum-Tongluo_Miaoli.html?m=19905"><i
+                class="fab fa-tripadvisor"></i></a>
+          </li>
+        </ul>
+        &copy;<script>
+          let d = new Date;
+          document.write(d.getFullYear());
+        </script> ESTHER WU
+      </div>
+    </div>
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/sweetalert2.all.min.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/Chart.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', './js/particlesjs-config (2).json', function () {});
+      $(document).on("readystatechange", function () {
+        if (document.readyState == "complete") {
+          $("#loading").fadeOut(2000, function () {
+            $("#content").fadeIn(1000);
+            $("#footer").fadeIn(1000);
+
+
+
+            new WOW().init();
+          });
+        }
+      })
+
+
+      document.addEventListener('DOMContentLoaded', function () {
+        $('.navbar-toggler').on('click', function () {
+          $(this)
+            .find('[data-fa-i2svg]')
+            .toggleClass('fa-bars')
+            .toggleClass('fa-times');
+        });
+      });
+
+
+      $("#tao").mouseover(function () {
+        $(this).css({
+          "stroke-width": "2",
+          "stroke": "#fff",
+        });
+      });
+      $("#tao").mouseout(function () {
+        // mo = 0;
+        $(this).css("stroke-width", "0");
+      });
+
+      $("#miao").mouseover(function () {
+        $(this).css({
+          "stroke-width": "2",
+          "stroke": "#fff",
+        });
+      });
+      $("#miao").mouseout(function () {
+        // mo = 0;
+        $(this).css("stroke-width", "0");
+      });
+
+      $("#chu").mouseover(function () {
+        $(this).css({
+          "stroke-width": "2",
+          "stroke": "#fff",
+        });
+      });
+      $("#chu").mouseout(function () {
+        // mo = 0;
+        $(this).css("stroke-width", "0");
+      });
+
+      $("#taichun").mouseover(function () {
+        $(this).css({
+          "stroke-width": "2",
+          "stroke": "#fff",
+        });
+      });
+      $("#taichun").mouseout(function () {
+        // mo = 0;
+        $(this).css("stroke-width", "0");
+      });
+
+      $("#huadon").mouseover(function () {
+        $(this).css({
+          "stroke-width": "2",
+          "stroke": "#fff",
+        });
+      });
+      $("#huadon").mouseout(function () {
+        // mo = 0;
+        $(this).css("stroke-width", "0");
+      });
+
+      $("#kao").mouseover(function () {
+        $(this).css({
+          "stroke-width": "2",
+          "stroke": "#fff",
+        });
+      });
+      $("#kao").mouseout(function () {
+        // mo = 0;
+        $(this).css("stroke-width", "0");
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        $('.navbar-toggler').on('click', function () {
+          $(this)
+            .find('[data-fa-i2svg]')
+            .toggleClass('fa-bars')
+            .toggleClass('fa-times');
+        });
+      });
+    </script>
+</body>
+
+</html>

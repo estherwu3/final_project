@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-143256738-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-143256738-2');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>客庄分布介紹</title>
+
+    <!-- FAVIOCN -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!-- 網站META -->
+    <!-- 說明最好要設，讓Google搜尋能抓到網站說明 -->
+    <meta name="keywords" content="客家庄,客家,景點">
+    <meta name="description" content="客家庄景點介紹網">
+    <meta name="author" content="ESTHER WU">
+
+    <!-- FACEBOOK META -->
+    <meta property="og:title" content="客家庄">
+    <meta property="og:image" content="./img/huabu.jpg">
+    <meta property="og:description" content="客家庄景點介紹網">
+    <meta property="og:site_name" content="客家景點">
+
+    <!-- Twitter META -->
+    <meta name="twitter:card" content="./img/huabu.jpg">
+    <meta name="twitter:site" content="客家 || 景點">
+    <meta name="twitter:title" content="客家庄">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="./img/huabu.jpg">
+
+    <!-- Apple META -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/coffee.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/dataTables.bootstrap4.min.css">
+
+
+
+    <!-- PWA -->
+    <link rel="manifest" href="./js/manifest.json">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <!-- <nav class="navbar navbar-expand-lg navbar fixed-top shadow-sm"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/Taiwan_Hakka.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                客家庄
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">
+                            <i class="fas fa-home"></i> 首頁
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./land.php">
+                            <i class="fas fa-monument"></i> 景點介紹
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./shop.html">
+                            <i class="fas fa-info-circle"></i> 旅遊諮詢
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./chart.html">
+                            <i class="fas fa-chart-bar"></i> 景點分布圖表
+                        </a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./map.html">
+                            <i class="fas fa-atlas"></i> 客庄台灣地圖分布
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page">
+        <div class="container-fluid" id="loading">
+            <div class="row h-100">
+                <div class="col-12 text-center align-self-center">
+                    <img src="./img/earth.svg" alt="" width="300" height="300">
+                    <p class="text-white">loading...</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="content" style="margin-top: 70px; margin-bottom:64px; ">
+            <div class="row">
+                <div class="col-12 text-center text-white rubberBand wow my-2">
+                    <h1>客庄分布圖表</h1>
+                </div>
+                <hr class="hr-white">
+                <div class="col-12 mx-auto">
+                    
+                        <canvas id="chart" style="display: block; width: 650px; height: 480px;"></canvas>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid  mt-4" id="footer">
+        <div class="row justify-content-center">
+            <div class="col-12 text-white text-center">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="https://www.facebook.com/www.hakka.gov.tw/"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            href=" https://www.hakka.gov.tw/Content/Content?NodeID=447&PageID=20822&LanguageType=CH"><i
+                                class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            href=" https://instagram.com/dongshi.hakka?igshid=vg2i0gpdr4us"><i
+                                class="fab fa-instagram"></i></a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            href=" https://www.tripadvisor.com.tw/Attraction_Review-g13806929-d7064174-Reviews-Taiwan_Hakka_Museum-Tongluo_Miaoli.html?m=19905"><i
+                                class="fab fa-tripadvisor"></i></a>
+                    </li>
+                </ul>
+                &copy;<script>
+                    let d = new Date;
+                    document.write(d.getFullYear());
+                </script> ESTHER WU
+            </div>
+        </div>
+
+
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/wow.min.js"></script>
+        <script src="./js/jquery.validate.min.js"></script>
+        <script src="./js/sweetalert2.all.min.js"></script>
+        <script src="./js/particles.min.js"></script>
+        <script src="./js/Chart.min.js"></script>
+        <script src="./js/jquery-3.4.1.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', './js/particlesjs-config (2).json', function () {});
+            $(document).on("readystatechange", function () {
+                if (document.readyState == "complete") {
+                    $("#loading").fadeOut(2000, function () {
+                        $("#content").fadeIn(1000);
+                        $("#footer").fadeIn(1000);
+
+
+
+                        new WOW().init();
+                    });
+                }
+            })
+
+            /*
+                getContext()，取得canvas的繪圖參數
+            */
+            // let ctx = document.getElementById("chart").getContext("2d");
+            let ctx = $("#chart");
+            // let myLineChart = new Chart(ctx, {
+            //     type: "line",
+            //     data: {
+            //         /* 資料區間名稱*/
+            //         labels: ["第一期", "第二期", "第三期", "第四期", "第五期"],
+            //         /* 資料組 */
+            //         datasets:[
+            //             {
+            //                 /* 名稱 */
+            //                 label: "PHP網頁班",
+            //                 /* 資料 */
+            //                 data: [7, 8, 10, 6, 9],
+            //                 // 線的顏色
+            //                 borderColor: "#00ffff",
+            //                 // 填滿顏色
+            //                 backgroundColor: "#f00",
+            //                 /* 是否填滿*/
+            //                 fill: true,
+            //                 // 線的寬度
+            //                 borderWidth: 5,
+            //                 // 線的彎曲程度，0為直線
+            //                 lineTension: 0
+            //             },
+            //         ]
+            //     },
+            //     options: {
+            //         /* 圖表標題*/
+            //         title: {
+            //             text: "職訓課程乙級通過人數",
+            //             display: true
+            //         }
+            //     }
+            // });
+
+            let myBarChart = new Chart(ctx, {
+                type: "bar",
+                data: {
+                    /* 資料區間名稱*/
+                    labels: ["新北市", "桃園縣", "新竹縣", "苗栗縣", "臺中市", "彰化縣", "嘉義縣", "屏東縣", "花蓮縣", "臺東縣"],
+                    /* 資料組 */
+                    datasets: [{
+                        /* 名稱 */
+                        label: "客家景點",
+                        /* 資料 */
+                        data: [10, 25, 34, 46, 41, 3, 3, 8, 10, 2, ],
+                        // 線的顏色
+                        borderColor: "#EEEE00",
+                        // 填滿顏色
+                        backgroundColor: "#f00",
+                        /* 是否填滿*/
+                        fill: true,
+                        // 邊框的寬度
+                        borderWidth: 2
+                    }, ]
+                },
+                // options: {
+                //     /* 圖表標題*/
+                //     title: {
+                //         text: "客家景點區域分布",
+                //         display: true
+                //     },
+
+                // },
+                options: {
+                    title: {
+                        text: "客家景點區域分布",
+                        display: true,
+                        fontStyle: 600,
+                        fontColor: '#333333',
+                        fontSize: 20
+                    },
+                    scales: {
+                        xAxes: [{
+                            gridLines: {
+                                // color: 'rgba(0, 0, 0, 0)',// 隱藏x軸方向軸線
+                                zeroLineColor: '#666666', // 設定軸顏色
+
+                            },
+                            barPercentage: 1, // 設定柱寬度
+                            ticks: { // 設定軸文字字號和色值
+                                fontSize: 20,
+                                fontColor: '#333333',
+                                fontFamily: 'lato',
+                                fontStyle: 600 //不要用fontWeight沒效
+                            }
+                        }],
+                        yAxes: [{
+                            gridLines: {
+                                // color: 'rgba(0, 0, 0, 0)',// 隱藏要y軸軸線
+                                zeroLineColor: '#333333'
+                            },
+                            ticks: {
+                                fontSize: 25,
+                                beginAtZero: true, // y軸資料從0開始展示
+                                fontColor: '#333333',
+                                // fontFamily: 'Verdana'
+                            }
+                        }]
+                    }
+                }
+            });
+
+            // let myPieChart = new Chart(ctx, {
+            //     type: "pie",
+            //     data:{
+            //         datasets:[{
+            //             data: [10, 20, 30, 40, 50],
+            //             backgroundColor: ["#f00", "#0f0", "#00f", "#ff0", "#f0f"]
+            //         }],
+            //         labels: ["第一期", "第二期", "第三期", "第四期", "第五期"]
+            //     },
+            //     options: {
+            //         /* 圖表標題*/
+            //         title: {
+            //             text: "職訓課程乙級通過人數",
+            //             display: true
+            //         }
+            //     }
+            // });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                $('.navbar-toggler').on('click', function () {
+                    $(this)
+                        .find('[data-fa-i2svg]')
+                        .toggleClass('fa-bars')
+                        .toggleClass('fa-times');
+                });
+            });
+        </script>
+</body>
+
+</html>

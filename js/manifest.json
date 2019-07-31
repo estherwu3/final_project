@@ -1,0 +1,19 @@
+{
+    "name": "客家庄",
+    "short_name": "客家庄景點",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#3EEEA4",
+    "icons": [
+        {
+            "src": "../img/Taiwan_Hakka.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "../img/Taiwan_Hakka2.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}

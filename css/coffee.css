@@ -1,0 +1,213 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "Microsoft JHengHei";
+    background-color: rgba(92, 92, 72, 0.315);
+}
+
+
+/* navbar按鈕旋轉 */
+.navbar-toggler {
+    outline: transparent !important;
+    border-color: transparent !important;
+    background-color: transparent !important;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler[aria-expanded*="false"] {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.navbar-toggler[aria-expanded*="true"] {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+#particles-js {
+
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* 老師自己打的可以調整圖片的大小 */
+.obj-fit {
+    object-fit: cover;
+    object-position: center;
+}
+
+.hr-white {
+    width: 100%;
+    background: white;
+}
+
+.indeximg {
+    height: 300px;
+}
+
+@media (max-width:768px) {
+    .indeximg {
+        order: 1;
+    }
+
+    .indextext {
+        order: 2;
+    }
+
+    .table-rwd .tr-hide {
+        display: none;
+    }
+
+    .table-rwd td:not(.dataTables_empty):before {
+        content: attr(data-th) ": ";
+        color: red;
+        font-weight: bold;
+    }
+
+    .table-rwd td {
+        display: block;
+        border: 0;
+
+    }
+
+    .table-rwd tr {
+
+        border: 1px solid black;
+        display: block;
+    }
+
+    /* #sv{
+        margin: auto;
+    }
+
+}
+@media (min-width:768px) {
+    #sv{
+
+        margin-left:280px;
+        margin-bottom:20px;
+    }*/
+}
+
+
+#loading {
+    height: 100vh;
+    overflow: hidden;
+    z-index: 1029;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/huabu.JPG);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+#content,
+#footer {
+    display: none;
+}
+
+.dataTables_wrapper label {
+    color: #fff;
+}
+
+#page {
+    /* min-height: 100vh ; */
+    min-height: calc(100vh - 56px - 64px - 64px - (70px - 56px));
+}
+
+.card-img-top {
+    height: 200px;
+}
+
+.card-body {
+    height: 150px;
+    overflow-y: auto;
+}
+
+/* svg {
+    cursor: pointer;    
+} */
+
+path#tao:hover {
+    /* cursor: pointer; */
+    transition: all 1s;
+    fill: darkgreen;
+    transform: translateY(-5px);
+}
+
+path#miao:hover {
+    /* cursor: pointer; */
+    transition: all 1s;
+    fill: darkorchid;
+    transform: translateY(-5px);
+}
+
+path#chu:hover {
+    /* cursor: pointer; */
+    transition: all 1s;
+    fill: darkmagenta;
+    transform: translateY(-5px);
+}
+
+path#taichun:hover {
+    /* cursor: pointer; */
+    transition: all 1s;
+    fill: darkcyan;
+    transform: translateY(-5px);
+}
+
+path#huadon:hover {
+    /* cursor: pointer; */
+    transition: all 1s;
+    fill: darkolivegreen;
+    transform: translateY(-5px);
+}
+
+path#kao:hover {
+    /* cursor: pointer; */
+    transition: all 1s;
+    fill: darkred;
+    transform: translateY(-5px);
+}
+
+.navbar {
+    background-color: #0C2E4A;
+}
+
+#footer {
+    background-color: #0C2E4A;
+}
+
+svg {
+    height: 100%;
+    width: 100%;
+}
+
+#taiwan {
+    padding-bottom: 0;
+}
